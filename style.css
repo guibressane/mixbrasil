@@ -1,0 +1,46 @@
+body {
+    background: url(img/BG-MixBrasil-Edicao-32.jpg) #000 center top no-repeat;
+    color: white;
+    font-family: "Roboto", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; 
+    font-weight: 200;
+    font-size: 17px;
+    text-align: center;
+    height: 270vh;
+    max-width: 100%;
+  }
+
+  .scroll-custom {
+  scrollbar-color: rgb(28, 28, 28) rgb(0, 0, 0);
+  scrollbar-width: thin; 
+  }
+
+  h1 {
+    color: #fff75b;
+    font-weight: 100;
+    font-size: 3em;
+    letter-spacing: 0.6em;
+    margin-top: 40vh;
+    padding-top: 2em;
+  }
+
+  .texto-destaque {
+    width: 58%;
+    margin: 0 auto;
+  }
+
+  #output {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+    pointer-events: none;
+  }
+  
+  .gsap-3-logo {
+    width: 200px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+  }
+
