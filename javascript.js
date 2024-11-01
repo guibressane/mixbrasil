@@ -150,7 +150,7 @@ const meuSvg = document.getElementById('meuSvg');
 function ajustarViewBox() {
   const larguraTela = window.innerWidth;
   if (larguraTela < 500) {
-    meuSvg.setAttribute('viewBox', '600 500 600 2000'); // Ajusta para telas menores que 500px
+    meuSvg.setAttribute('viewBox', '600 500 800 2000'); // Ajusta para telas menores que 500px
   } else {
     meuSvg.setAttribute('viewBox', '20 30 1450 1600.3'); // Ajusta para telas maiores que 500px
   }

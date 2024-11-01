@@ -50,15 +50,14 @@ h1 {
     width: 80%;
     margin: 0 auto;
     font-size: 0.6em;
-    padding-top: 80px;
+    padding-top: 55%;
   }
 
-  .texto-destaque-fonte h1 {
+  .texto-destaque h1 {
     color: #fff75b;
     font-weight: 100;
     letter-spacing: 0.6em;
-    margin-top: 4em;
-    padding-top: 2em;
+    margin-top: 0;
   }
 
 }
