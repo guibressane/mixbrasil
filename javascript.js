@@ -60,13 +60,13 @@ scrollTrigger: {
 // começa efeito mariposa
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
-gsap.set("#motionSVG", { scale: 0.85, autoAlpha: 1 });
-gsap.set("#mariposa", {transformOrigin: "50% 50%", scaleX: -1});
-let getProp = gsap.getProperty("#motionSVG"),
+gsap.set("#motionIMG", { scale: 0.85, autoAlpha: 1 });
+gsap.set(".mariposa", {transformOrigin: "50% 50%", scaleX: -1});
+let getProp = gsap.getProperty("#motionIMG"),
     flippedX = false,
     flippedY = false;
 
-gsap.to("#motionSVG", {
+gsap.to("#motionIMG", {
   scrollTrigger: {
     trigger: "#motionPath",
     start: "top center",
@@ -78,7 +78,7 @@ gsap.to("#motionSVG", {
           flipY = Math.abs(rotation) > 90,
           flipX = self.direction === 1;
       if (flipY !== flippedY || flipX !== flippedX) {
-        gsap.to("#mariposa", {scaleY: flipY ? -1 : 1, scaleX: flipX ? -1 : 1, duration: 0.25});
+        gsap.to(".mariposa", {scaleY: flipY ? -1 : 1, scaleX: flipX ? -1 : 1, duration: 0.25});
         flippedY = flipY;
         flippedX = flipX;
       }

@@ -1,5 +1,5 @@
 body {
-    background: url(img/BG-MixBrasil-Edicao-32.jpg) #000 center top no-repeat;
+    background: url(img/BG-MixBrasil-Edicao-32-V3.jpg) #000 center top no-repeat;
     color: white;
     font-family: "Roboto", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; 
     font-weight: 200;
@@ -37,10 +37,24 @@ body {
     pointer-events: none;
   }
   
-  .gsap-3-logo {
-    width: 200px;
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
+  @media screen and (max-width: 500px) {
+    body {
+      background: url(img/MIX32-BG-MOB-4.jpg) center top no-repeat #000;
+    }
+  
+    .texto-destaque {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .texto-destaque-fonte {
+      color: #fff75b;
+      font-weight: 100;
+      font-size: 1.8em;
+      letter-spacing: 0.6em;
+      margin-top: 4em;
+      padding-top: 2em;
+    }
+  
   }
+  
 
