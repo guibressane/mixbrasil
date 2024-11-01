@@ -1,60 +1,66 @@
 body {
-    background: url(img/BG-MixBrasil-Edicao-32-V3.jpg) #000 center top no-repeat;
-    color: white;
-    font-family: "Roboto", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; 
-    font-weight: 200;
-    font-size: 17px;
-    text-align: center;
-    height: 270vh;
-    max-width: 100%;
-  }
+  background: url(img/BG-MixBrasil-Edicao-32-V3.jpg) #000 center top no-repeat;
+  color: white;
+  font-family: "Roboto", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; 
+  font-weight: 200;
+  font-size: 17px;
+  text-align: center;
+  height: 270vh;
+  max-width: 100%;
+}
 
-  .scroll-custom {
+.scroll-custom {
   scrollbar-color: rgb(28, 28, 28) rgb(0, 0, 0);
   scrollbar-width: thin; 
-  }
+}
 
-  h1 {
-    color: #fff75b;
-    font-weight: 100;
-    font-size: 3em;
-    letter-spacing: 0.6em;
-    margin-top: 40vh;
-    padding-top: 2em;
+h1 {
+  color: #fff75b;
+  font-weight: 100;
+  font-size: 3em;
+  letter-spacing: 0.6em;
+  margin-top: 40vh;
+  padding-top: 2em;
+}
+
+.area-efeito {
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+}
+
+
+#mariposa-scroll-2 {
+  display: none;
+}
+
+.texto-destaque {
+  width: 58%;
+  margin: 0 auto;
+  padding-top: 400px;
+}
+
+  
+@media screen and (max-width: 500px) {
+  body {
+    background: url(img/MIX32-BG-MOB-4.jpg) center top no-repeat #000;
   }
 
   .texto-destaque {
-    width: 58%;
+    width: 80%;
     margin: 0 auto;
+    font-size: 0.6em;
+    padding-top: 80px;
   }
 
-  #output {
-    position: fixed;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
-    font-size: 21px;
-    pointer-events: none;
+  .texto-destaque-fonte h1 {
+    color: #fff75b;
+    font-weight: 100;
+    letter-spacing: 0.6em;
+    margin-top: 4em;
+    padding-top: 2em;
   }
-  
-  @media screen and (max-width: 500px) {
-    body {
-      background: url(img/MIX32-BG-MOB-4.jpg) center top no-repeat #000;
-    }
-  
-    .texto-destaque {
-      width: 80%;
-      margin: 0 auto;
-    }
-    .texto-destaque-fonte {
-      color: #fff75b;
-      font-weight: 100;
-      font-size: 1.8em;
-      letter-spacing: 0.6em;
-      margin-top: 4em;
-      padding-top: 2em;
-    }
-  
-  }
+
+}
   
 

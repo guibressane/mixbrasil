@@ -46,16 +46,6 @@ gsap.from("h1", {
   }
 });
 
-gsap.from(".heroLogoAnim", {
-scrollTrigger: {
-    trigger: ".heroLogoAnim",
-  },
-  duration: 2.5, 
-	opacity: 0, 
-	scale: 0.3, 
-	ease:"back"
-});
-
 
 // começa efeito mariposa
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
@@ -152,3 +142,24 @@ function pathEase(path, config={}) {
     return i ? s + (a[Math.ceil(i)] - s) * (i % 1) : 0;
   }
 }
+
+
+// adaptação efeito mariposa para dipositivos móveis
+const meuSvg = document.getElementById('meuSvg');
+
+function ajustarViewBox() {
+  const larguraTela = window.innerWidth;
+  if (larguraTela < 500) {
+    meuSvg.setAttribute('viewBox', '600 500 600 2000'); // Ajusta para telas menores que 500px
+  } else {
+    meuSvg.setAttribute('viewBox', '20 30 1450 1600.3'); // Ajusta para telas maiores que 500px
+  }
+}
+
+// Chamar a função no carregamento da página e em cada redimensionamento
+window.addEventListener('load', ajustarViewBox);
+window.addEventListener('resize', ajustarViewBox);
+
+
+
+
